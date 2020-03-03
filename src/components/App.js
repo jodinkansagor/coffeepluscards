@@ -1,6 +1,5 @@
 import React from 'react';
-import { Header } from './common/Header.js';
-
+import { Header } from '../components/common/Header';
 
 export default function App() {
   return (
