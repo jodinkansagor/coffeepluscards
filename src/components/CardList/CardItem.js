@@ -1,26 +1,23 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
 
-const CardItem = ({ date, card, deck, category, explanation }) => {
-  
+const CardItem = () => {
+  const card = {
+    date: "Feb 1",
+    card: "2 of cups",
+    deck: "Rider-Waite",
+    category: ["love", "family"],
+    explanation: "Mushy love stuff",
+  };
+
   return (
     <section>
-      <h2>Date pulled: {date}</h2>
-      <h2>Card: {card}</h2>
-      <h2>Deck: {deck}</h2>
-      <h3>{category}</h3>
-      <p>{explanation}</p>
-
+      <h2>Date pulled: {card.date}</h2>
+      <h2>Card: {card.card}</h2>
+      <h2>Deck: {card.deck}</h2>
+      <h3>{card.category}</h3>
+      <p>{card.explanation}</p>
     </section>
-  )
+  );
 };
-
-CardItem.propTypes = {
-  date: PropTypes.string.isRequired,
-  card: PropTypes.string.isRequired,
-  deck: PropTypes.string.isRequired,
-  category: PropTypes.string.isRequired,
-  explanation: PropTypes.string.isRequired,
-}
 
 export default CardItem;
