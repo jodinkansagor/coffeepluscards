@@ -1,16 +1,19 @@
 import React from "react";
 import { Header } from "./commonFiles/Header";
 import CardItem from "./CardList/CardItem";
-import Auth, { SignUp, Login } from "./auth/Auth";
+import AuthPage from "../pages/AuthPage";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-export default function App() {
+const App = () => {
   return (
-    <>
-      {/* <Header />
-      <CardItem /> */}
-      {/* <Auth /> */}
-      <SignUp />
-      <Login />
-    </>
+    <Router>
+      <Header />
+      <Switch>
+        <Route exact path="/auth" component={AuthPage} />
+        <Route exact path="/cards" component={CardItem} />
+      </Switch>
+    </Router>
   );
-}
+};
+
+export default App;
