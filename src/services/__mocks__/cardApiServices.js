@@ -14,13 +14,10 @@ const cardTwo = {
   explanation: "thinking a lot",
 };
 
-
 export const postCard = () => {
-  return Promise.resolve(card1);
+  return Promise.resolve(cardOne);
 };
 
 export const getCards = () => {
-  return Promise.resolve([
-    card1, card2
-  ]);
+  return Promise.resolve([cardOne, cardTwo]);
 };

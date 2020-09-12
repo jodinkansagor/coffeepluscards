@@ -4,7 +4,7 @@ const {
   FECTH_GET_CARDS,
 } = require("./cardActions");
 
-jest.mock("../services/cardService.js");
+jest.mock("../services/cardApiServices.js");
 
 describe("get cards", () => {
   it("creates the get loading state", () => {

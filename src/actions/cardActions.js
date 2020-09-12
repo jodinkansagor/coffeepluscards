@@ -1,4 +1,4 @@
-import { getCards } from "..services/cardServices";
+import { getCards } from "../services/cardApiServices";
 
 export const FETCH_GET_CARD_LOADING = "FETCH_GET_CARD_LOADING";
 export const FECTH_GET_CARDS = "FETCH_GET_CARDS";
