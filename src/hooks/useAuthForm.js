@@ -26,7 +26,6 @@ const useAuthForm = (type) => {
       } else {
         console.log(res);
         console.log("Logged In!");
-        // window.location.href = "./cards";
       }
     });
   };

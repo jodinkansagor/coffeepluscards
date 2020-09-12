@@ -1,12 +1,12 @@
 const request = (path, method, body) => {
   return fetch(
-    `https://cors-anywhere.herokuapp.com/http://coffeepluscardspdx.herokuapp.com/api/v1/${path}`,
+    `https://coffeepluscardspdx.herokuapp.com/api/v1/${path}`,
     {
       method,
       headers: {
         "Content-type": "application/json",
       },
-      // credentials: "include",
+      credentials: "include",
       body: body && JSON.stringify(body),
     }
   )
@@ -19,3 +19,5 @@ const request = (path, method, body) => {
 };
 
 export default request;
+
+// https://cors-anywhere.herokuapp.com/
