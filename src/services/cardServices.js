@@ -1,5 +1,3 @@
-const URL = "http://coffeepluscardspdx.herokuapp.com/api/v1/cardpulls";
-
 export async function getcardPulls() {
   let queryString = window.location.hash.slice(1);
   const url = `${URL}?${queryString}`;
