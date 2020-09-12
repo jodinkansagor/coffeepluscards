@@ -1,4 +1,4 @@
-const cardOne = {
+export const cardOne = {
   date: "Feb 1",
   card: "2 of cups",
   deck: "Rider-Waite",
@@ -6,7 +6,7 @@ const cardOne = {
   explanation: "Mushy love stuff",
 };
 
-const cardTwo = {
+export const cardTwo = {
   date: "Feb 2",
   card: "2 of swords",
   deck: "Rider-Waite",
